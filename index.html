@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1 class="bg-primary text-white p-4 mb-4">CRUD using Web Storages</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <form id="stdForm">
+            <div class="form-group">
+              <label for="fname"> <strong> First Name*</strong></label>
+              <input type="text" id="fname" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <label for="lname"> <strong>Last Name*</strong> </label>
+              <input type="text" id="lname" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <label for="email"><strong>Email*</strong></label>
+              <input
+                type="text"
+                id="email"
+                class="form-control"
+                required
+               
+              />
+            </div>
+            <div class="form-group">
+              <label for="contact"><strong>Contact*</strong></label>
+              <input
+                type="text"
+                id="contact"
+                class="form-control"
+                required
+               
+              />
+            </div>
+            <div class="text-right">
+              <input
+                type="submit"
+                id="submitBtn"
+                class="btn btn-primary"
+                value="Submit"
+              />
+              <input
+              type="button"
+              id="updateBtn"
+              class="btn btn-primary d-none"
+              value="Update"
+              
+            />
+            </div>
+          </form>
+        </div>
+        <div class="col-sm-8">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Sr No</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Contact</th>
+                <th>Edit</th>
+                <th>Delete</th>
+              </tr>
+            </thead>
+            <tbody id="info">
+              <!-- <tr>
+                <td>1</td>
+                <td>Tony</td>
+                <td>Stark</td>
+                <td>tony@stark.com</td>
+                <td>1234567890</td>
+              </tr> -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
+
+
+
+<!-- pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
+pattern="[0-9]{10,10}$" -->
